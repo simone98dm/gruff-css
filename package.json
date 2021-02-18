@@ -1,0 +1,11 @@
+{
+  "name": "gruff-css",
+  "version": "0.0.1",
+  "description": "My personal css kit",
+  "scripts": {
+    "build": "sass src/base.scss dist/gruff.min.css --style compressed",
+    "start": "sass --watch src/base.scss dist/gruff.css"
+  },
+  "author": "simone98dm",
+  "license": "MIT"
+}

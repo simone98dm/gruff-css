@@ -1,0 +1,14 @@
+@import "config";
+
+input {
+  padding: $baseUnit;
+  font-size: 100%;
+}
+
+input:active {
+  border-color: $lightblue;
+}
+
+textarea {
+  padding: $baseUnit;
+}

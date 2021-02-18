@@ -1,0 +1,14 @@
+@import "config";
+
+.card {
+    border: 1px solid $grey;
+    padding: $baseUnit $doubleUnit;
+    color: $textDark;
+    background-color: $white;
+    margin: $baseUnit;
+}
+
+.card.dark {
+    color: $textLight;
+    background-color: $dark;
+}

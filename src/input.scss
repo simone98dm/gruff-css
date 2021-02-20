@@ -3,12 +3,28 @@
 input {
   padding: $baseUnit;
   font-size: 100%;
-}
-
-input:active {
-  border-color: $lightblue;
+  color: $dark;
+  border: 1px solid $grey;
+  border-radius: $commonBorderRadius;
 }
 
 textarea {
   padding: $baseUnit;
+  font-size: 100%;
+  color: $dark;
+  border: 1px solid $grey;
+  border-radius: $commonBorderRadius;
+}
+
+select {
+  padding: $baseUnit;
+  font-size: 100%;
+  color: $dark;
+  border: 1px solid $grey;
+  border-radius: $commonBorderRadius;
+}
+
+select option {
+  padding: $baseUnit;
+  color: $dark;
 }

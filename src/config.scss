@@ -1,18 +1,19 @@
 // define colors
-$textDark: #000;
-$textLight: #fff;
+$textDark: rgb(0, 0, 0);
+$textLight: rgb(235, 235, 235);
 
-$white: #fff;
-$black: #000;
-$dark: #303030;
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$dark: #1f1f1f;
 $pink: #eb4b98;
 $deepblue: #003f91;
-$lightblue: #61a5c2;
+$lightblue: #2d90bb;
 $green: #00916e;
 $orange: #faa916;
 $red: #c71f37;
 $deepred: #85182a;
 $grey: #e2e2e2;
+
 
 $primaryColor: $deepblue;
 $secondaryColor: $lightblue;
@@ -24,3 +25,4 @@ $dirtyWhite: #ececec;
 $halfUnit: 0.1rem;
 $baseUnit: 0.25rem;
 $doubleUnit: 0.5rem;
+$commonBorderRadius: .2rem

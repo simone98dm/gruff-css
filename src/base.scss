@@ -1,9 +1,10 @@
 @import "config";
+@import "margin";
 @import "card";
 @import "shadow";
-@import "margin";
 @import "input";
 @import "button";
+@import "typography";
 
 * {
   box-sizing: border-box;
@@ -13,15 +14,14 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  box-sizing: border-box;
   font-size: 20px;
   line-height: 1.5;
   -webkit-tap-highlight-color: transparent;
 }
 body {
   margin: 0;
-  background: #fff;
-  color: #3b4351;
+  background: $white;
+  color: $textDark;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", sans-serif;
   font-size: 0.8rem;
@@ -39,4 +39,8 @@ figcaption,
 figure,
 main {
   display: block;
+}
+
+.dark {
+  background-color: $dark;
 }

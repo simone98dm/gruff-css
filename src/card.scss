@@ -1,14 +1,20 @@
 @import "config";
+$cardDark: #2c2c2c;
 
 .card {
-    border: 1px solid $grey;
-    padding: $baseUnit $doubleUnit;
-    color: $textDark;
-    background-color: $white;
-    margin: $baseUnit;
+  border: 1px solid $grey;
+  padding: $baseUnit $doubleUnit;
+  color: $textDark;
+  background-color: $white;
+  margin: $baseUnit;
+  border-radius: $commonBorderRadius;
 }
 
-.card.dark {
-    color: $textLight;
-    background-color: $dark;
+.dark .card {
+  background-color: $cardDark;
+  border: 1px solid $dark;
+  border-radius: $commonBorderRadius;
+  a {
+    color: $lightblue;
+  }
 }

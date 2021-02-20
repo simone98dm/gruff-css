@@ -7,7 +7,8 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #fff;
+  background: $dirtyWhite;
+  color: $textDark;
   border-radius: 0.1rem;
   cursor: pointer;
   display: inline-block;
@@ -36,25 +37,23 @@ button:disabled {
 }
 button.success {
   background-color: $green;
-  color: $white;
+  color:$textLight
 }
 button.error {
   background-color: $red;
-  color: $white;
+  color:$textLight
 }
 button.warning {
   background-color: $orange;
-  color: $black;
 }
 button.primary {
   background-color: $deepblue;
-  color: $white;
+  color:$textLight
 }
 button.light {
   background-color: $grey;
-  color: $textDark;
 }
 button.dark {
   background-color: $dark;
-  color: $textLight;
+  color:$textLight
 }

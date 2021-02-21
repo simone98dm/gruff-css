@@ -1,0 +1,73 @@
+@import "config";
+
+button {
+  //   margin: 0 $halfUnit !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 1rem;
+  appearance: none;
+  background: $dirtyWhite;
+  color: $textDark;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.2rem;
+  outline: 0;
+  padding: 0.4rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s, border 0.2s, box-shadow 0.2s, color 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  text-align: center;
+  user-select: none;
+  border: 0;
+  white-space: nowrap;
+  border-radius: $commonBorderRadius;
+  vertical-align: middle;
+  box-sizing: border-box;
+  cursor: pointer;
+  white-space: nowrap;
+}
+button.sm {
+  padding: 0.2rem;
+  font-size: 0.8rem;
+}
+button :hover :focus {
+  opacity: 0.9;
+}
+button:active {
+  opacity: 0.7;
+}
+a button[disabled],
+button[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
+	cursor: default;
+	opacity: .6;
+	cursor: not-allowed;
+}
+button.success {
+  background-color: $green;
+  color: $textLight;
+}
+button.error {
+  background-color: $red;
+  color: $textLight;
+}
+button.warning {
+  background-color: $orange;
+}
+button.primary {
+  background-color: $deepblue;
+  color: $textLight;
+}
+button.light {
+  background-color: $grey;
+}
+button.dark {
+  background-color: $dark;
+  color: $textLight;
+}

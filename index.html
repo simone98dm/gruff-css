@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/gruff.css" />
+  </head>
+  <body class="dark">
+    <div class="container">
+      <div>
+        <h3 class="header">GUIDE</h3>
+        <p class="content">
+          Here is a guide of all the things styled by Wing, how to use the grid,
+          and how to use some components.
+        </p>
+        <div class="guide-section">
+          <h3 class="header">TYPOGRAPHY</h3>
+          <p class="content">
+            Wing styles based on <code>rem</code> units. All
+            <code>rem</code> units are converted to base 10, so
+            <code>1rem</code> is equal to <code>10px</code>. By default, all
+            headings, paragraphs, and code use system fonts, using the most
+            modern one available on a user's operating system.
+          </p>
+          <div class="row">
+            <div class="col-6">
+              <h1>H1 Heading</h1>
+              <h2>H2 Heading</h2>
+              <h3>H3 Heading</h3>
+              <h4>H4 Heading</h4>
+              <h5>H5 Heading</h5>
+              <h6>H6 Heading</h6>
+            </div>
+            <div class="col-6">
+              <p>Paragraph</p>
+              <p><strong>Bold</strong></p>
+              <p><i>Italic</i></p>
+              <a href="#">Links</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-section">
+          <h3 class="header">BUTTONS</h3>
+          <p class="content">
+            Wing styles buttons with two main styles, filled and outlined. These
+            styles can easily be overwritten, and are there to provide a base
+            for buttons.
+          </p>
+          <div class="row">
+            <div class="col-12">
+              <button>default</button>
+              <button class="success">success</button>
+              <button class="error">error</button>
+              <button class="warning">warning</button>
+              <button class="primary">primary</button>
+              <button class="dark">dark</button>
+              <button class="light">light</button>
+              <button disabled>disabled</button>
+            </div>
+            <div class="col-12">
+              <button class="sm">default</button>
+              <button class="sm success">success</button>
+              <button class="sm error">error</button>
+              <button class="sm warning">warning</button>
+              <button class="sm primary">primary</button>
+              <button class="sm dark">dark</button>
+              <button class="sm light">light</button>
+              <button class="sm" disabled>disabled</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-section">
+          <h3 class="header">FORMS</h3>
+          <p class="content">
+            Wing styles all common form elements with basic, clean styles.
+          </p>
+          <div class="row">
+            <div class="col-6">
+              <label>Name</label>
+              <input type="text" placeholder="John Doe" />
+            </div>
+            <div class="col-6">
+              <label>Type</label>
+              <select name="type">
+                <option value="message">Message</option>
+                <option value="feature">Feature</option>
+                <option value="report">Report</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label>Message</label>
+              <textarea
+                placeholder="Greetings..."
+                spellcheck="false"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-section">
+          <h3 class="header">NAVIGATION</h3>
+          <p class="content">
+            Wing comes with a simple, customizable navigation component.
+          </p>
+          <div class="nav">
+            <h5 class="nav-logo">Logo</h5>
+            <a class="nav-item" href="#">Item</a>
+            <a class="nav-item" href="#">Item</a>
+            <a class="nav-item" href="#">Item</a>
+          </div>
+          <p>
+            All items have a class of <code>nav-item</code>, and an optional
+            logo with the class of <code>nav-logo</code> can be added. Combined
+            with utilities (below) such as <code>fixed</code>,
+            <code>left</code>, <code>right</code>, or <code>center</code>, a
+            navigation can be customized to your needs.
+          </p>
+        </div>
+
+        <div class="guide-section">
+          <h3 class="header">LIST</h3>
+          <div class="row">
+            <div class="col-12">
+              <h6>UL</h6>
+              <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <h6>OL</h6>
+              <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-section">
+          <h3 class="header">CARDS</h3>
+          <p class="content">Wing comes with a sleek card component.</p>
+          <div class="cards">
+            <div class="card">
+              <h5 class="card-header">Header</h5>
+              <p class="card-body">
+                Here is some content for a beautiful card made with the Wing CSS
+                framework. A card can be within multiple
+                <code>.cards</code> for a card-based responsive interface.
+              </p>
+              <div class="card-footer center text-center">
+                <p><a href="#">Footer Link</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <h5 class="card-header">Header</h5>
+              <p class="card-body">
+                Here is some content for a beautiful card made with the Wing CSS
+                framework. A card can be within multiple
+                <code>.cards</code> for a card-based responsive interface.
+              </p>
+              <div class="card-footer center text-center">
+                <p><a href="#">Footer Link</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

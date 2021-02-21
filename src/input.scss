@@ -1,0 +1,53 @@
+@import "config";
+
+input,
+textarea,
+select {
+  padding: $doubleUnit;
+  color: $dark;
+  font-size: 1rem;
+  border-radius: $commonBorderRadius;
+  border: 1px solid $grey;
+}
+
+textarea {
+  width: 100%;
+}
+
+select option {
+  padding: $doubleUnit;
+  color: $dark;
+}
+
+address,
+area,
+article,
+aside,
+audio,
+blockquote,
+datalist,
+details,
+dl,
+fieldset,
+figure,
+form,
+input,
+iframe,
+img,
+meter,
+nav,
+ol,
+optgroup,
+option,
+output,
+p,
+pre,
+progress,
+ruby,
+section,
+table,
+textarea,
+ul,
+video {
+  margin-bottom: 1rem;
+}

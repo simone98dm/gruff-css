@@ -1,0 +1,22 @@
+@import "config";
+
+ol,
+ul {
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+li {
+  margin: .4rem;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+
+.dark {
+  color: $white;
+}

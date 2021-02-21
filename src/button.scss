@@ -2,10 +2,9 @@
 
 button {
   //   margin: 0 $halfUnit !important;
-  border: 0;
-  font-size: 0.8rem;
   -webkit-appearance: none;
   -moz-appearance: none;
+  font-size: 1rem;
   appearance: none;
   background: $dirtyWhite;
   color: $textDark;
@@ -21,9 +20,19 @@ button {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  text-align: center;
   user-select: none;
-  vertical-align: middle;
+  border: 0;
   white-space: nowrap;
+  border-radius: $commonBorderRadius;
+  vertical-align: middle;
+  box-sizing: border-box;
+  cursor: pointer;
+  white-space: nowrap;
+}
+button.sm {
+  padding: 0.2rem;
+  font-size: 0.8rem;
 }
 button :hover :focus {
   opacity: 0.9;
@@ -31,29 +40,34 @@ button :hover :focus {
 button:active {
   opacity: 0.7;
 }
-button:disabled {
-  opacity: 0.8;
-  cursor: not-allowed;
+a button[disabled],
+button[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
+	cursor: default;
+	opacity: .6;
+	cursor: not-allowed;
 }
 button.success {
   background-color: $green;
-  color:$textLight
+  color: $textLight;
 }
 button.error {
   background-color: $red;
-  color:$textLight
+  color: $textLight;
 }
 button.warning {
   background-color: $orange;
 }
 button.primary {
   background-color: $deepblue;
-  color:$textLight
+  color: $textLight;
 }
 button.light {
   background-color: $grey;
 }
 button.dark {
   background-color: $dark;
-  color:$textLight
+  color: $textLight;
 }

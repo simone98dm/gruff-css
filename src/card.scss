@@ -8,13 +8,20 @@ $cardDark: #2c2c2c;
   background-color: $white;
   margin: $baseUnit;
   border-radius: $commonBorderRadius;
+
+  .body {
+    padding: $doubleUnit;
+  }
 }
 
-.dark .card {
-  background-color: $cardDark;
-  border: 1px solid $dark;
-  border-radius: $commonBorderRadius;
-  a {
-    color: $lightblue;
+.dark {
+  .card {
+    background-color: $cardDark;
+    border: 1px solid $dark;
+    border-radius: $commonBorderRadius;
+
+    a {
+      color: $lightblue;
+    }
   }
 }

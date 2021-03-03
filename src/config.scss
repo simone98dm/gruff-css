@@ -14,6 +14,9 @@ $red: #c71f37;
 $deepred: #85182a;
 $grey: #e2e2e2;
 
+$fade: .2;
+$solid: 1;
+
 
 $primaryColor: $deepblue;
 $secondaryColor: $lightblue;
@@ -25,4 +28,5 @@ $dirtyWhite: #ececec;
 $halfUnit: 0.1rem;
 $baseUnit: 0.25rem;
 $doubleUnit: 0.5rem;
-$commonBorderRadius: .2rem
+$commonBorderRadius: .2rem;
+$commonBorderRadiusFull: 5rem;

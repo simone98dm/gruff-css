@@ -8,12 +8,7 @@
 @import "list";
 @import "tag";
 
-@font-face {
-  font-family: 'Product Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-}
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 * {
   box-sizing: border-box;
@@ -32,11 +27,9 @@ body {
   color: $textDark;
   padding: 2rem;
   border-radius: 6px;
-  // font-family: -apple-system, system-ui, BlinkMacSystemFont,  "Segoe UI", Roboto,
-  //   "Helvetica Neue", sans-serif;  
-  font-family: "Product Sans", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Rubik", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   line-height: 1.5;
-  // font-size: 1.03rem;
+  font-size: 1.2rem;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   word-break: break-word;

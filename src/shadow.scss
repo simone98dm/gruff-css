@@ -1,13 +1,15 @@
+@import "config";
+
 .shadow {
-    box-shadow: 0 0.35rem .75rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.35rem .75rem rgba($color: $black, $alpha: .15);
 }
 
 .shadow-sm {
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    box-shadow: 0 0.125rem 0.25rem rgba($color: $black, $alpha: .075)
 }
 
 .shadow-lg {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1rem 3rem rgba($color: $black, $alpha: .175)
 }
 
 .shadow-none {

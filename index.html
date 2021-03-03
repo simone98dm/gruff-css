@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/simone98dm/gruff-css/main/dist/gruff.css" />
+    <link rel="stylesheet" href="dist/gruff.css" />
   </head>
-  <body class="dark">
+  <body class="">
     <div class="container">
+      <button onclick="toggleTheme()">toggle</button>
       <div>
         <h3 class="header">GUIDE</h3>
         <p class="content">
@@ -154,30 +155,31 @@
           <p class="content">Wing comes with a sleek card component.</p>
           <div class="cards">
             <div class="card">
-              <h5 class="card-header">Header</h5>
-              <p class="card-body">
+              <h5>Header</h5>
+              <p>
                 Here is some content for a beautiful card made with the Wing CSS
                 framework. A card can be within multiple
                 <code>.cards</code> for a card-based responsive interface.
               </p>
-              <div class="card-footer center text-center">
-                <p><a href="#">Footer Link</a></p>
-              </div>
+              <a href="#">Footer Link</a>
             </div>
             <div class="card">
-              <h5 class="card-header">Header</h5>
-              <p class="card-body">
+              <h5>Header</h5>
+              <p>
                 Here is some content for a beautiful card made with the Wing CSS
                 framework. A card can be within multiple
                 <code>.cards</code> for a card-based responsive interface.
               </p>
-              <div class="card-footer center text-center">
-                <p><a href="#">Footer Link</a></p>
-              </div>
+              <a href="#">Footer Link</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      function toggleTheme() {
+        document.getElementsByTagName("body")[0].classList.toggle("dark");
+      }
+    </script>
   </body>
 </html>

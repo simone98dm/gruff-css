@@ -1,36 +1,42 @@
 @import "config";
 
-
 .tag {
-    padding: $halfUnit $baseUnit;
-    border-radius: $commonBorderRadiusFull;
-    margin: $halfUnit;
-    font-size: 80%;
-    color: $textDark;
+  padding: $halfUnit $doubleUnit;
+  border-radius: $commonBorderRadiusFull;
+  margin: $halfUnit;
+  font-size: 80%;
+  color: $violet;
+  border: 0 solid rgba($color: $violet, $alpha: $solid);
+  background-color: rgba($color: $violet, $alpha: $fade);
 }
 
-.tag.success{
-    border: 1px solid rgba($color: $green, $alpha: $solid);
-    background-color: rgba($color: $green, $alpha: $fade);
-    color: $green;
+.tag.success {
+  border: 1px solid rgba($color: $green, $alpha: $solid);
+  background-color: rgba($color: $green, $alpha: $fade);
+  color: $green;
 }
-.tag.error{
-    border: 1px solid rgba($color: $red, $alpha: $solid);
-    background-color: rgba($color: $red, $alpha: $fade);
-    color: $red;
+.tag.error {
+  border: 1px solid rgba($color: $red, $alpha: $solid);
+  background-color: rgba($color: $red, $alpha: $fade);
+  color: $red;
 }
-.tag.warning{
-    border: 1px solid rgba($color: $orange, $alpha: $solid);
-    background-color: rgba($color: $orange, $alpha: $fade);
-    color: $orange;
+.tag.warning {
+  border: 1px solid rgba($color: $orange, $alpha: $solid);
+  background-color: rgba($color: $orange, $alpha: $fade);
+  color: $orange;
 }
-.tag.primary{
-    border: 1px solid rgba($color: $primaryColor, $alpha: $solid);
-    background-color: rgba($color: $primaryColor, $alpha: $fade);
-    color: $primaryColor;
+.tag.primary {
+  border: 1px solid rgba($color: $primaryColor, $alpha: $solid);
+  background-color: rgba($color: $primaryColor, $alpha: $fade);
+  color: $primaryColor;
 }
-.tag.dark{
-    border: 1px solid rgba($color: $dark, $alpha: $solid);
-    background-color: rgba($color: $dark, $alpha: $fade);
-    color: $textDark;
+.tag.dark {
+  border: 1px solid rgba($color: $dark, $alpha: $solid);
+  background-color: rgba($color: $dark, $alpha: $fade);
+  color: $textDark;
+}
+.tag.light {
+  border: 1px solid rgba($color: $dirtyWhite, $alpha: $solid);
+  background-color: rgba($color: $dirtyWhite, $alpha: $fade);
+  color: $textLight;
 }

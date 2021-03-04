@@ -49,18 +49,18 @@ input[type="button"][disabled] {
 	opacity: .6;
 	cursor: not-allowed;
 }
-button.success {
+button.green {
   background-color: $green;
   color: $textLight;
 }
-button.error {
+button.red {
   background-color: $red;
   color: $textLight;
 }
-button.warning {
+button.orange {
   background-color: $orange;
 }
-button.primary {
+button.blue {
   background-color: $deepblue;
   color: $textLight;
 }

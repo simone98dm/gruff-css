@@ -2,26 +2,61 @@
 $cardDark: #2c2c2c;
 
 .card {
-  border: 1px solid $grey;
+  border: $borderSize solid $grey;
   padding: $baseUnit $doubleUnit;
   color: $textDark;
   background-color: $white;
   margin: $baseUnit;
   border-radius: $commonBorderRadius;
 
-  .body {
-    padding: $doubleUnit;
+  .title {
+    padding: $baseUnit;
   }
+
+  .subtitle {
+    padding: $baseUnit;
+  }
+
+  .body {
+    padding: $baseUnit;
+  }
+}
+
+.card.green {
+  background-color: $green;
+  color: $textLight;
+  border: $borderSize solid $green;
+}
+.card.orange {
+  background-color: $orange;
+  color: $textLight;
+  border: $borderSize solid $orange;
+}
+.card.red {
+  background-color: $red;
+  color: $textLight;
+  border: $borderSize solid $red;
+}
+.card.violet {
+  background-color: $violet;
+  color: $textLight;
+  border: $borderSize solid $violet;
+}
+.card.blue {
+  background-color: $lightblue;
+  color: $textLight;
+  border: $borderSize solid $lightblue;
+}
+.card.dark {
+  background-color: $dark;
+  color: $textLight;
+  border: $borderSize solid $dark;
 }
 
 .dark {
   .card {
     background-color: $cardDark;
-    border: 1px solid $dark;
+    border: $borderSize solid $dark;
     border-radius: $commonBorderRadius;
-
-    a {
-      color: $lightblue;
-    }
   }
 }

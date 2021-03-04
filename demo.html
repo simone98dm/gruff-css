@@ -1,88 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="dist/gruff.css" />
-  </head>
-  <body class="">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2>Hi folks!</h2>
-          <button onclick="toggleTheme()">toggle</button>
-          <h1>My name is Simone</h1>
-          <h3>
-            I am a frontend & backend developer, tech enthusiast, and pizza
-            lover.
-          </h3>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="dist/gruff.css" />
+</head>
+
+<body class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Hi folks!</h2>
+        <button onclick="toggleTheme()">toggle</button>
+        <h1>My name is Simone</h1>
+        <h3>
+          I am a frontend & backend developer, tech enthusiast, and pizza
+          lover.
+        </h3>
       </div>
-      <div class="row">
+    </div>
+    <div class="row">
+      <div class="col">
         <h3>Things about me</h3>
-        <div class="col">
-          <div class="card shadow-lg">
-            <h4 class="text-center">Languages</h4>
-            <div class="body">
-              <span class="tag success">C#</span>
-              <span class="tag error">ASP.Net Core</span>
-              <span class="tag warning">Javascript</span>
-              <span class="tag primary">Typescript</span>
-              <span class="tag dark">Java</span>
+        <article class="card">
+          <h4 class="text-center">Title</h4>
+          <h6 class="subtitle">subtitle</h6>
+          <div class="body">
+
+            <p>body</p>
+            <ul class="tags">
+              <li class="tag">#1</li>
+              <li class="tag">#2</li>
+              <li class="tag">#3</li>
+              <li class="tag">#4</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="col">
+        <div class="card shadow-lg">
+          <h4 class="text-center">Languages</h4>
+          <div class="body">
+            <div class="tags">
+              <span class="tag green">C#</span>
+              <span class="tag violet">ASP.Net Core</span>
+              <span class="tag orange">Javascript</span>
+              <span class="tag blue">Typescript</span>
+              <span class="tag red">Java</span>
               <span class="tag light">PHP</span>
-              <span class="tag">Python</span>
-              <span class="tag">HTML/CSS/SASS</span>
+              <span class="tag dark">Python</span>
+              <span class="tag green no-border">HTML/CSS/SASS</span>
               <span class="tag">SQL</span>
               <span class="tag">Bash</span>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow">
-            <h4 class="text-center">Frameworks</h4>
-            <div class="body">
-              <span class="tag">React</span>
-              <span class="tag">Angular</span>
-              <span class="tag">Bootstrap</span>
-              <span class="tag">Svelte/Sapper</span>
-              <span class="tag">JQuery</span>
-              <span class="tag">EntityFramework</span>
-              <span class="tag">Express</span>
-              <span class="tag">Ionic</span>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <h4 class="text-center">Other</h4>
-            <p>
-              Linux/WindowsAzure/AWSDockerGitPostmanNmapNodeJSRabbitMQRedisMySQL/Postgresql
-            </p>
+      </div>
+      <div class="col">
+        <div class="card shadow">
+          <h4 class="text-center">Frameworks</h4>
+          <div class="body">
+            <span class="tag">React</span>
+            <span class="tag">Angular</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">Svelte/Sapper</span>
+            <span class="tag">JQuery</span>
+            <span class="tag">EntityFramework</span>
+            <span class="tag">Express</span>
+            <span class="tag">Ionic</span>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <h3>Else</h3>
-        </div>
-        <div class="col-12">
-          <div class="card">
-            <h4>Certifications</h4>
-            <p></p>
-          </div>
-          <div class="card">
-            <h4>TSAC2019</h4>
-            <p></p>
+      <div class="col">
+        <div class="card shadow-sm">
+          <h4 class="text-center">Other</h4>
+          <div class="body">
+            <span class="tag">Linux/Windows</span>
+            <span class="tag">Azure/AWS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag">Postman</span>
+            <span class="tag">Nmap</span>
+            <span class="tag">NodeJS</span>
+            <span class="tag">Redis</span>
+            <span class="tag">MySQL/Postgresql</span>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      function toggleTheme() {
-        document.getElementsByTagName("body")[0].classList.toggle('dark');
-      }
-    </script>
-  </body>
+    <div class="row">
+      <div class="col-12">
+        <h3>Else</h3>
+      </div>
+      <div class="col-12">
+        <div class="card">
+          <h4>Certifications</h4>
+          <p></p>
+        </div>
+        <div class="card">
+          <h4>TSAC2019</h4>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleTheme() {
+      document.getElementsByTagName("body")[0].classList.toggle('dark');
+    }
+  </script>
+</body>
+
 </html>

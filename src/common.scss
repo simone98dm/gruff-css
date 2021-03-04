@@ -1,0 +1,14 @@
+@import "config";
+
+
+.no-border {
+  border: 0 !important;
+}
+
+.rounded {
+  border-radius: $commonBorderRadiusFull;
+}
+
+.smooth {
+  border-radius: $commonBorderRadius;
+}

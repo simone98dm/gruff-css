@@ -13,6 +13,7 @@
   <main class="container">
     <button onclick="toggleTheme()">toggle theme</button>
     <button onclick="toggleSize()">toggle size</button>
+    <h6>build <code id="hash"></code></h6>
     <div>
       <h3 class="header">GUIDE</h3>
       <p class="content">
@@ -272,6 +273,11 @@
       document.getElementsByTagName("main")[0].classList.toggle("container-fluid");
       document.getElementsByTagName("main")[0].classList.toggle("container");
     }
+    (async function() {
+      const x = await fetch('https://api.github.com/repos/simone98dm/gruff-css/commits/gh-pages', new Headers({'User-agent': 'Mozilla/4.0 Custom User Agent',"Access-Control-Allow-Origin": "*"})).then(response => response.json());
+      const sha = x.sha.substr(0,9);
+      document.getElementById('hash').innerHTML=sha;
+    })();
   </script>
 </body>
 
